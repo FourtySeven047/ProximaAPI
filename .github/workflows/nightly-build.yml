@@ -1,4 +1,4 @@
-name: CoreAPI | Nightly Builder
+name: ProximaAPI | Nightly Builder
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: CoreAPI | Release Builder
+name: ProximaAPI | Release Builder
 
 on:
   release:
