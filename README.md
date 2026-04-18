@@ -24,8 +24,8 @@ Before proceeding, ensure you’ve added a token to your `settings.xml` file (de
 ```xml
 
 <dependency>
-    <groupId>minevalley.proxima</groupId>
-    <artifactId>api</artifactId>
-    <version>0.0.0</version>
+    <groupId>eu.minevalley</groupId>
+    <artifactId>proxima-api</artifactId>
+    <version>1.0.0</version>
 </dependency>
 ```
