@@ -1,6 +1,6 @@
-package minevalley.proxima.api.database;
+package eu.minevalley.proxima.api.database;
 
-import minevalley.proxima.api.Proxima;
+import eu.minevalley.proxima.api.Proxima;
 import org.intellij.lang.annotations.Language;
 import org.jetbrains.annotations.Contract;
 

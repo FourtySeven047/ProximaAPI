@@ -1,4 +1,4 @@
-package minevalley.proxima.api.database;
+package eu.minevalley.proxima.api.database;
 
 import lombok.AccessLevel;
 import lombok.Getter;

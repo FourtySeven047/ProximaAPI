@@ -1,6 +1,6 @@
-package minevalley.proxima.api;
+package eu.minevalley.proxima.api;
 
-import minevalley.proxima.api.database.StatementBuilder;
+import eu.minevalley.proxima.api.database.StatementBuilder;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.intellij.lang.annotations.Language;
 import org.jetbrains.annotations.Contract;
