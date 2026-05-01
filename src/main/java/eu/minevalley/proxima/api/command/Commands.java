@@ -10,7 +10,7 @@ import javax.annotation.Nonnull;
  * A utility class for creating commands.
  */
 @SuppressWarnings("unused")
-public interface Commands<U extends User> {
+interface Commands<U extends User> {
 
     /**
      * @param name the name of the (sub-) command
