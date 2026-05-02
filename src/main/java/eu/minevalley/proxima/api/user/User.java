@@ -36,12 +36,14 @@ public interface User extends Registrant {
     }
 
     /**
-     * Gets whether this user is online.
+     * Gets whether this user is connected to the proxy.
+     * <p>
+     * <b>Note:</b> This method doesn't check, whether the user is on a specific server!
      *
-     * @return true, if the user is online
+     * @return true, if the user is connected to the proxy
      */
     @Contract(pure = true)
-    boolean isOnline();
+    boolean isConnected();
 
     /**
      * Gets the unique id of this user.
