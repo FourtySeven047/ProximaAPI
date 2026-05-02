@@ -137,7 +137,7 @@ public interface Proxima {
      * @return true, if string contains forbidden words
      */
     @Contract(value = "null -> false", pure = true)
-    boolean containsForForbiddenWords(@Nullable String text);
+    boolean containsForbiddenWords(@Nullable String text);
 
     /**
      * Converts a string to a transparent string.
