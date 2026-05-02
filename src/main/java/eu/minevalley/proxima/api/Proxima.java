@@ -2,7 +2,6 @@ package eu.minevalley.proxima.api;
 
 import com.google.gson.Gson;
 import eu.minevalley.proxima.api.banking.BankAccount;
-import eu.minevalley.proxima.api.command.ProxyCommands;
 import eu.minevalley.proxima.api.corporation.Group;
 import eu.minevalley.proxima.api.corporation.company.*;
 import eu.minevalley.proxima.api.discord.EmbeddedMessage;
@@ -460,15 +459,6 @@ public interface Proxima {
             throws IllegalArgumentException {
         return createReminder(hours, minutes, callback, DayOfWeek.values());
     }
-
-    /**
-     * Gets the command interface that can be used to register new commands.
-     *
-     * @return the command interface
-     */
-    @Nonnull
-    @Contract(pure = true)
-    ProxyCommands commands();
 
     /**
      * Registers an event listener.
