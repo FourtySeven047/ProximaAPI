@@ -1,5 +1,7 @@
 package eu.minevalley.proxima.api;
 
+import eu.minevalley.proxima.api.command.Command;
+import eu.minevalley.proxima.api.user.ProxyUser;
 import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.Contract;
 
@@ -10,6 +12,7 @@ import javax.annotation.Nonnull;
 public abstract class ProximaModule extends AbstractModule {
 
     private final @Nonnull Proxima proxima;
+    private final @Nonnull Command<ProxyUser> command;
 
     /**
      * Gets this modules instance of the {@link Proxima}.
@@ -20,6 +23,18 @@ public abstract class ProximaModule extends AbstractModule {
     @Contract(pure = true)
     public final Proxima proxima() {
         return proxima;
+    }
+
+    /**
+     * Gets this modules instance of the {@link Command} registry.
+     *
+     * @return this modules instance of the Commands registry
+     */
+    @Nonnull
+    @Contract(pure = true)
+    @Override
+    public final Command<ProxyUser> command() {
+        return command;
     }
 
     /**
